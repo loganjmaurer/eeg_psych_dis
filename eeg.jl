@@ -1,3 +1,4 @@
 using CSV
+using DataFrames
 
-CSV.read("EEG.machinelearing_data_BRMH.csv")
+myData= CSV.File("EEG.machinelearing_data_BRMH.csv") |> DataFrame
