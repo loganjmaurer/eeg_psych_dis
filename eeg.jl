@@ -19,5 +19,8 @@ ylabel!(plt, "IQ")
 title!(plt, "IQ Distributions by Main Disorder", fontsize=16)
 
 # Add legend with disorder names and colors
-plot!(legend=:topright, legendtitle="Main Disorder", legendfontsize=12, legendtitlefontsize=14, 
+plot!(plt, legend=:topright, legendtitle="Main Disorder", legendfontsize=12, legendtitlefontsize=14, 
       framealpha=0.5)
+
+# Save the plot as a PNG file
+#savefig(plt, "IQ_Violin_Plot.png")
