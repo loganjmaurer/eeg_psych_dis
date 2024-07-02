@@ -54,8 +54,3 @@ grid_search.fit(pc_scores, eeg[target_var].values)
 # Print the best parameters and the best score
 print("Best Parameters:", grid_search.best_params_)
 print("Best Score:", grid_search.best_score_)
-
-# Evaluate the model using cross-validation
-scores = cross_val_score(grid_search.best_estimator_, pc_scores, eeg[target_var].values, cv=5)
-print("Cross-Validation Scores:", scores)
-print("Mean Cross-Validation Score:", scores.mean())
